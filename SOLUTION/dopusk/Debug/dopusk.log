@@ -1,0 +1,9 @@
+﻿  Source.cpp
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(15,1): error C2059: синтаксическая ошибка: }
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(15,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(15,1): error C2238: непредвиденные лексемы перед ";"
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(65,1): error C2440: =: невозможно преобразовать "std::string" в "double"
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(65,27): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(70,31): error C2039: "rank": не является членом "Employee".
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(52): message : см. объявление "Employee"
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\dopusk\Source.cpp(73,13): error C2059: синтаксическая ошибка: .

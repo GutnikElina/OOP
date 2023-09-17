@@ -1,0 +1,4 @@
+﻿  lab_1.cpp
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\LAB_1\lab_1.cpp(81,13): warning C4129: =: неизвестная escape-последовательность
+D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\LAB_1\lab_1.cpp(86): warning C4715: continue_or_not: значение возвращается не при всех путях выполнения
+  LAB_1.vcxproj -> D:\Documents\Лабораторные работы - БГУИР\OOPIP\SOLUTION\Debug\LAB_1.exe
