@@ -1,0 +1,70 @@
+﻿  lab_4.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1455,19): error C2672: "operator __surrogate_func": не найдена соответствующая перегруженная функция
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1454): message : выполняется компиляция ссылки на экземпляр шаблон функции "bool std::_Debug_lt_pred<_Pr&,Pencil&,Pencil&,0>(std::less<void>&,_Ty1,_Ty2) noexcept(<expr>)"
+          with
+          [
+              _Pr=std::less<void>,
+              _Ty1=Pencil &,
+              _Ty2=Pencil &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7050): message : выполняется компиляция ссылки на экземпляр шаблон функции "_BidIt std::_Insertion_sort_unchecked<_RanIt,_Pr>(const _BidIt,const _BidIt,_Pr)"
+          with
+          [
+              _BidIt=Pencil *,
+              _RanIt=Pencil *,
+              _Pr=std::less<void>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7080): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Sort_unchecked<Pencil*,_Fn>(_RanIt,_RanIt,__int64,_Pr)"
+          with
+          [
+              _Fn=std::less<void>,
+              _RanIt=Pencil *,
+              _Pr=std::less<void>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7085): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::sort<_RanIt,std::less<void>>(const _RanIt,const _RanIt,_Pr)"
+          with
+          [
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Pencil>>>,
+              _Pr=std::less<void>
+          ]
+D:\Documents\LAB_WORKS_BSUIR\OOPIP\SOLUTION_2\lab_4\lab_4.cpp(256): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::sort<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>(const _RanIt,const _RanIt)"
+          with
+          [
+              _Ty=Pencil,
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Pencil>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1455,1): error C2893: Сбой при специализации функции-шаблона "unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) noexcept(<expr>) const".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef(218): message : см. объявление "std::less<void>::operator ()"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1455,1): message : Со следующими аргументами шаблона:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1455,1): message : "_Ty1=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1455,1): message : "_Ty2=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6984,16): error C2672: "operator __surrogate_func": не найдена соответствующая перегруженная функция
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7061): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<_RanIt,_RanIt> std::_Partition_by_median_guess_unchecked<_RanIt,_Pr>(_RanIt,_RanIt,_Pr)"
+          with
+          [
+              _RanIt=Pencil *,
+              _Pr=std::less<void>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6984,1): error C2893: Сбой при специализации функции-шаблона "unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) noexcept(<expr>) const".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef(218): message : см. объявление "std::less<void>::operator ()"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6984,1): message : Со следующими аргументами шаблона:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6984,1): message : "_Ty1=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6984,1): message : "_Ty2=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6988,76): error C2672: "operator __surrogate_func": не найдена соответствующая перегруженная функция
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6988,1): error C2893: Сбой при специализации функции-шаблона "unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) noexcept(<expr>) const".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef(218): message : см. объявление "std::less<void>::operator ()"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6988,1): message : Со следующими аргументами шаблона:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6988,1): message : "_Ty1=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6988,1): message : "_Ty2=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6999,24): error C2672: "operator __surrogate_func": не найдена соответствующая перегруженная функция
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6999,1): error C2893: Сбой при специализации функции-шаблона "unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) noexcept(<expr>) const".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef(218): message : см. объявление "std::less<void>::operator ()"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6999,1): message : Со следующими аргументами шаблона:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6999,1): message : "_Ty1=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(6999,1): message : "_Ty2=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7012,24): error C2672: "operator __surrogate_func": не найдена соответствующая перегруженная функция
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7012,1): error C2893: Сбой при специализации функции-шаблона "unknown-type std::less<void>::operator ()(_Ty1 &&,_Ty2 &&) noexcept(<expr>) const".
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstddef(218): message : см. объявление "std::less<void>::operator ()"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7012,1): message : Со следующими аргументами шаблона:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7012,1): message : "_Ty1=Pencil &"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7012,1): message : "_Ty2=Pencil &"

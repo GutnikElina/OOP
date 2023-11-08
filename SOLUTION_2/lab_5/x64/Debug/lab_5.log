@@ -1,0 +1,4 @@
+﻿  lab_5.cpp
+D:\Documents\LAB_WORKS_BSUIR\OOPIP\SOLUTION_2\lab_5\lab_5.cpp(93): warning C4717: operator==: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\Documents\LAB_WORKS_BSUIR\OOPIP\SOLUTION_2\lab_5\lab_5.cpp(98): warning C4717: operator!=: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+  lab_5.vcxproj -> D:\Documents\LAB_WORKS_BSUIR\OOPIP\SOLUTION_2\x64\Debug\lab_5.exe
