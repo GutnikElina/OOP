@@ -12,6 +12,7 @@ list, vector, array, которые будут хранить объекты классов по предметной
 #include <fstream>
 #include <vector>
 #include <list>
+#include <array>
 #include <algorithm>
 #include<iomanip>
 
@@ -41,8 +42,6 @@ public:
 		date = std::to_string(day) + "." + std::to_string(month) + "." + std::to_string(year);
 	}
 };
-
-
 
 class Transport: public Date
 {
@@ -95,8 +94,6 @@ public:
 		return is;
 	}
 };
-
-
 
 class Menu
 {
@@ -289,6 +286,7 @@ int main()
 
 	std::list<Transport> listTransport = Menu::getFromFile(filename, listTransport);
 	std::vector<Transport> vectorTransport = Menu::getFromFile(filename, vectorTransport);
+	std::array<Transport, 1> arrayTransport;
 
 	Transport t;
 	std::string name, mark, date;
@@ -325,6 +323,9 @@ int main()
 
 			vectorTransport.push_back(t);
 
+			if(arrayTransport.empty())
+				arrayTransport = {t};
+
 			Menu::addInFile(filename, vectorTransport);
 
 
@@ -337,6 +338,9 @@ int main()
 			int number = Menu::checkInt();
 
 			vectorTransport.erase(vectorTransport.begin() + number - 1);
+
+			listTransport.pop_back();
+			
 			Menu::addInFile(filename, vectorTransport);
 
 			std::cout << "\n--------- УСПЕШНО УДАЛЕНО ---------\n";
