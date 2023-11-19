@@ -15,26 +15,26 @@
 #include<stdexcept>
 #include <Windows.h>
 
-class Stationery 
+class Stationery
 {
     std::string name;
     double price;
 public:
     Stationery() {}
 
-    std::string getName() const { return name;}
+    std::string getName() const { return name; }
     double getPrice() const { return price; }
     void setName(std::string n) { this->name = n; }
     void setPrice(double p) { this->price = p; }
 
-    virtual void showProduct() const  = 0; 
+    virtual void showProduct() const = 0;
 };
 
-class Pencil : public Stationery 
+class Pencil : public Stationery
 {
     std::string color;
 public:
-    Pencil(): Stationery() {}
+    Pencil() : Stationery() {}
 
     std::string getColor() const { return color; }
     void setColor(std::string c) { this->color = c; }
@@ -47,11 +47,11 @@ public:
     }
 };
 
-class Pen : public Stationery 
+class Pen : public Stationery
 {
     std::string inkColor;
 public:
-    Pen(): Stationery() {}
+    Pen() : Stationery() {}
 
     std::string getInkColor() const { return inkColor; }
     void setInkColor(std::string i) { this->inkColor = i; }
@@ -64,10 +64,10 @@ public:
     }
 };
 
-class Eraser : public Stationery 
+class Eraser : public Stationery
 {
 public:
-    Eraser(): Stationery() {}
+    Eraser() : Stationery() {}
 
     void showProduct() const
     {
@@ -76,10 +76,10 @@ public:
     }
 };
 
-class Sharpener : public Stationery 
+class Sharpener : public Stationery
 {
 public:
-    Sharpener(): Stationery() {}
+    Sharpener() : Stationery() {}
 
     void showProduct() const
     {
@@ -301,7 +301,7 @@ int main()
     std::vector<Pen> p;
     std::vector<Eraser> er;
     std::vector<Sharpener> sh;
-    
+
     Pencil pencils;
     pencils.setName("Карандаш");
     pencils.setPrice(2);
