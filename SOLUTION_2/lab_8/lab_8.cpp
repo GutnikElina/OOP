@@ -84,11 +84,16 @@ public:
 	{
 		return number > other.number;
 	}
+
+	bool operator<(const Transport& other) const
+	{
+		return number < other.number;
+	}
 };
 
 queue<Transport> transportQueue;
 stack<Transport> transportStack;
-priority_queue<Transport, vector<Transport>, greater<Transport>> transportPriorityQueue;
+priority_queue<Transport, vector<Transport>> transportPriorityQueue;
 
 void addToQueue(Transport obj) { transportQueue.push(obj); }
 void addToStack(Transport obj) { transportStack.push(obj); }
