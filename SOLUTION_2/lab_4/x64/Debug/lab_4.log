@@ -32,7 +32,7 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.3253
               _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<Pencil>>>,
               _Pr=std::less<void>
           ]
-D:\Documents\LAB_WORKS_BSUIR\OOPIP\SOLUTION_2\lab_4\lab_4.cpp(256,9): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::sort<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>(const _RanIt,const _RanIt)"
+D:\Documents\LAB_WORKS_BSUIR\OOPIP\SOLUTION_2\lab_4\lab_4.cpp(263,9): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::sort<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>(const _RanIt,const _RanIt)"
           with
           [
               _Ty=Pencil,

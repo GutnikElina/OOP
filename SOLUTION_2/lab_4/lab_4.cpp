@@ -12,7 +12,7 @@
 #include <vector>
 #include <iomanip>
 #include <algorithm>
-#include<stdexcept>
+#include <stdexcept>
 #include <Windows.h>
 
 class Stationery
@@ -27,19 +27,19 @@ public:
     void setName(std::string n) { this->name = n; }
     void setPrice(double p) { this->price = p; }
 
-    virtual void showProduct() const = 0;
+    virtual void showProduct() = 0;
 };
 
 class Pencil : public Stationery
 {
     std::string color;
 public:
-    Pencil() : Stationery() {}
+    Pencil();
 
     std::string getColor() const { return color; }
     void setColor(std::string c) { this->color = c; }
 
-    void showProduct() const
+    void showProduct() 
     {
         std::cout << "Название: " << std::left << std::setw(10) << getName()
             << "Цена: " << std::left << std::setw(8) << getPrice()
@@ -51,25 +51,25 @@ class Pen : public Stationery
 {
     std::string inkColor;
 public:
-    Pen() : Stationery() {}
+    Pen();
 
     std::string getInkColor() const { return inkColor; }
     void setInkColor(std::string i) { this->inkColor = i; }
 
-    void showProduct() const
+    void showProduct()
     {
         std::cout << "Название: " << std::left << std::setw(10) << getName()
             << "Цена: " << std::left << std::setw(8) << getPrice()
-            << "Цвет чернил: " << std::left << inkColor << std::endl;
+            << "Цвет: " << std::left << getInkColor() << std::endl;
     }
 };
 
 class Eraser : public Stationery
 {
 public:
-    Eraser() : Stationery() {}
+    Eraser();
 
-    void showProduct() const
+    void showProduct()
     {
         std::cout << "Название: " << std::left << std::setw(10) << getName()
             << "Цена: " << std::left << std::setw(8) << getPrice() << std::endl;
@@ -79,9 +79,9 @@ public:
 class Sharpener : public Stationery
 {
 public:
-    Sharpener() : Stationery() {}
+    Sharpener();
 
-    void showProduct() const
+    void showProduct()  
     {
         std::cout << "Название: " << std::left << std::setw(10) << getName()
             << "Цена: " << std::left << std::setw(8) << getPrice() << std::endl;
@@ -111,7 +111,7 @@ int correct()
     }
 }
 
-void showAllProducts(std::vector<Pen>& p, std::vector<Pencil>& pencils, std::vector<Eraser>& e, std::vector <Sharpener>& sh)
+void showAllProducts(std::vector<Pen> p, std::vector<Pencil> pencils, std::vector<Eraser> e, std::vector <Sharpener> sh)
 {
     if (p.empty() && pencils.empty() && e.empty() && sh.empty())
     {
@@ -122,22 +122,29 @@ void showAllProducts(std::vector<Pen>& p, std::vector<Pencil>& pencils, std::vec
         std::cout << "======== Список принадлежностей в заказе ========" << std::endl;
         for (int i = 0; i < p.size(); i++)
         {
-            p.at(i).showProduct();
+            std::cout << "Название: " << std::left << std::setw(10) << p.at(i).getName()
+                << "Цена: " << std::left << std::setw(8) << p.at(i).getPrice()
+                << "Цвет чернил: " << std::left << p.at(i).getInkColor() << std::endl;
         }
         std::cout << "=================================================" << std::endl;
         for (int i = 0; i < pencils.size(); i++)
         {
             pencils.at(i).showProduct();
+            std::cout << "Название: " << std::left << std::setw(10) << p.at(i).getName()
+                << "Цена: " << std::left << std::setw(8) << p.at(i).getPrice()
+                << "Цвет чернил: " << std::left << p.at(i).getInkColor() << std::endl;
         }
         std::cout << "=================================================" << std::endl;
         for (int i = 0; i < e.size(); i++)
         {
-            e.at(i).showProduct();
+            std::cout << "Название: " << std::left << std::setw(10) << e.at(i).getName()
+                << "Цена: " << std::left << std::setw(8) << e.at(i).getPrice();
         }
         std::cout << "=================================================" << std::endl;
         for (int i = 0; i < sh.size(); i++)
         {
-            sh.at(i).showProduct();
+            std::cout << "Название: " << std::left << std::setw(10) << sh.at(i).getName()
+                << "Цена: " << std::left << std::setw(8) << sh.at(i).getPrice();
         }
         std::cout << "=================================================" << std::endl;
 
