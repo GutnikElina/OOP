@@ -308,7 +308,7 @@ void readFromFileStudent(std::vector<Student> &s)
 	}
 }
 
-void readFromFileAudience(University& u)
+void readFromFileAudience(Audience& u)
 {
 	std::ifstream outFile("audiences.txt", std::ios::in);
 	int number_of_equipments;
@@ -449,7 +449,7 @@ int main()
 
 	readFromFileUniversity(university);
 	readFromFileStudent(student);
-	readFromFileAudience(university);
+	readFromFileAudience(audience);
 
 	int choice{};
 	std::string line{};
